@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-btn v-on:click="sprints.push({})">Создать спринт</v-btn>
+    <v-btn v-on:click="sprints.push({})">Create a sprint</v-btn>
     <v-expansion-panels>
       <v-expansion-panel 
         v-for="(item,i) in sprints"
@@ -9,12 +9,12 @@
         <v-expansion-panel-header>
           <v-row>
             <v-col>
-            <span>Спринт {{i}}</span>
-            <span> {{Math.floor(Math.random() *10+21)}} янв. - {{Math.floor(Math.random() *20+6)}} февраля.</span> 
-            <span>(задач {{x}})</span>
+            <span>Sprint {{i}}</span>
+            <span> {{Math.floor(Math.random() *10+21)}} Jan. - {{Math.floor(Math.random() *20+6)}} Feb.</span> 
+            <span>(tasks {{x}})</span>
             </v-col>
             <v-col>
-              <v-btn>Завершить спринт</v-btn>
+              <v-btn>Complete a sprint</v-btn>
             </v-col>
           </v-row>
         </v-expansion-panel-header>
@@ -22,14 +22,14 @@
           v-for="(item,i) in x=Math.floor(Math.random() *10+1)"
           :key="i"
         >
-          контент
+          content
         </v-expansion-panel-content>
 
       </v-expansion-panel>
 
       <v-expansion-panel>
         <v-expansion-panel-header>
-          Беклог (задач: {{backlog.length}})
+          Backlog (tasks: {{backlog.length}})
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div
@@ -39,7 +39,7 @@
             test {{i}}
           </div>
           <v-text-field
-            label="Что нужно сделать?"
+            label="task?"
             type="text"
             v-model="message"
           >
@@ -50,7 +50,7 @@
           </template>
           <template v-slot:append-outer>
             <v-btn v-on:click="backlog.push({})">
-              Создать задачу
+              Create a task
             </v-btn>
             </template>
           </v-text-field>

@@ -1,12 +1,12 @@
 <template>
   <v-card>
     <v-card-title>
-      Репозитории
+      Repositories
       <v-spacer></v-spacer>
       <v-text-field
         v-model="search"
         append-icon="mdi-magnify"
-        label="Поиск"
+        label="Search"
         single-line
         hide-details
       ></v-text-field>
@@ -26,13 +26,13 @@
         search: '',
         headers: [
           {
-            text: 'Название',
+            text: 'Name',
             align: 'start',
             sortable: false,
             value: 'summary',
           },
-          { text: 'Описание', sortable: false, value: 'description' },
-          { text: 'Последнее обновление', value: 'updated' },
+          { text: 'Description', sortable: false, value: 'description' },
+          { text: 'Last updated', value: 'updated' },
         ],
         desserts: [
           {

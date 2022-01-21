@@ -12,11 +12,11 @@
               color="indigo"
               dark
             >
-              <v-toolbar-title>Задачи</v-toolbar-title>
+              <v-toolbar-title>Task</v-toolbar-title>
             </v-toolbar>
 
             <v-list three-line>
-              <template v-for="(item, index) in shuffle(items)">
+              <template v-for="(item, index) in items">
                 <v-divider
                   :key="index"
                   v-if="index"
@@ -50,27 +50,27 @@
   export default {
     data: () => ({
       items: [
-{
-          title: 'Задача',
+        {
+          title: 'Task',
           subtitle: 'lorem upsum',
         },
         {
-          title: 'Тестирование',
-          subtitle: 'Протестировать супер сложную задачу',
+          title: 'Testing',
+          subtitle: 'Test a very hard problem',
         },
         {
-          title: 'Фича',
-          subtitle: 'Чтобы клиент был доволен',
+          title: 'Feature',
+          subtitle: 'To keep the client happy',
         },
         {
-          title: 'Баг',
-          subtitle: 'Исправить!!!',
+          title: 'Bug',
+          subtitle: 'Fix!!!',
         },
       ],
       count: [],
     }),
     methods:{
-      shuffle(array) { return array.sort(() => Math.random() - 0.5)}
-}
+    // shuffle(array) { return array.sort(() => Math.floor(Math.random() - 0.5))}
+  }
   }
 </script>

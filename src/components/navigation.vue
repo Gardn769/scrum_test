@@ -70,13 +70,13 @@ export default {
   data: () => ({
       selectedItem: 0, // здесь типо id выбранного пункта меню (пригодится мб)
       items: [
-        { text: 'Облачное хранилище', icon: 'mdi-cloud-check', url: {name: "CloudFile"}},
+        { text: 'Cloud storage', icon: 'mdi-cloud-check', url: {name: "CloudFile"}},
         // { text: 'Дорожная карта', icon: 'mdi-account-multiple', url: {name: "RoadMap"} },
-        { text: 'Бэклог', icon: 'mdi-star', url: {name: "Backlog"}},
-        { text: 'Доска', icon: 'mdi-view-dashboard-edit-outline', url: {name: "Board"} },
-        { text: 'Код', icon: 'mdi-bicycle', url: {name: "Repositories"} },
-        { text: 'Чат', icon: 'mdi-tooltip-text', url: 'Chat' },
-        { text: 'Настройки', icon: 'mdi-message-cog', url: 'Setting' },
+        { text: 'Backlog', icon: 'mdi-star', url: {name: "Backlog"}},
+        { text: 'Board', icon: 'mdi-view-dashboard-edit-outline', url: {name: "Board"} },
+        { text: 'Repositories', icon: 'mdi-bicycle', url: {name: "Repositories"} },
+        { text: 'Chat', icon: 'mdi-tooltip-text', url: 'Chat' },
+        { text: 'Setting', icon: 'mdi-message-cog', url: 'Setting' },
       ],
     }),
 }
